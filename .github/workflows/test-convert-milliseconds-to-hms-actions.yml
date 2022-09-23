@@ -1,0 +1,25 @@
+# This is a basic workflow that is manually triggered
+
+name: Test convert-milliseconds-to-hms-actions workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      milliseconds:
+        description: 'The input milliseconds value to convert'
+        default: '1000'
+        required: true
+
+jobs:
+  convert-milliseconds-to-hms:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Convert the input milliseconds into hh:mm:ss format
+      uses: nhantrantrong/convert-milliseconds-to-hms-actions@v1.0.0
+      id: convert-milliseconds
+      with: 
+        inputMilliseconds: ${{ github.event.inputs.milliseconds }}
+        
+    - name: Print output
+      run: echo "The converted output - ${{ steps.convert-milliseconds.outputs.hmsFormatted }}"

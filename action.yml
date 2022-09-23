@@ -1,0 +1,13 @@
+name: Convert milliseconds value into HMS format
+author: Nhan Tran
+description: Change the input milliseconds in to hh:mm:ss format
+inputs:
+  inputMilliseconds:
+    description: The input milliseconds
+    required: true
+outputs:
+  hmsFormatted:
+    description: The formatted output in hh:mm:ss
+runs:
+  using: node12
+  main: src/index.js

@@ -1,0 +1,22 @@
+{
+  "name": "convert-milliseconds-to-hms-actions",
+  "version": "1.0.0",
+  "description": "This is a library to convert time from milliseconds to hms format in github action workflow",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhantrantrong/convert-milliseconds-to-hms-actions.git"
+  },
+  "author": "Nhan Tran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhantrantrong/convert-milliseconds-to-hms-actions/issues"
+  },
+  "homepage": "https://github.com/nhantrantrong/convert-milliseconds-to-hms-actions#readme",
+  "dependencies": {
+    "@actions/core": "^1.9.1"
+  }
+}
